@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  font-family: 'Patrick Hand', cursive;
+  background: #fdf6f0;
+  color: #5a3e36;
+  text-align: center;
+}
+
+.page {
+  display: none;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.active {
+  display: flex;
+}
+
+.card {
+  background: #fffaf7;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+  max-width: 400px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background: #ff9aa2;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ff6f91;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.box {
+  width: 140px;
+  height: 140px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  flex-direction: column;
+  transition: 0.3s;
+}
+
+.box:hover {
+  transform: rotate(-3deg) scale(1.05);
+}
+
+/* scrapbook */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.polaroid {
+  background: white;
+  padding: 10px 10px 30px;
+  width: 140px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+  position: relative;
+  transition: 0.3s;
+}
+
+.polaroid:nth-child(odd) { transform: rotate(-5deg); }
+.polaroid:nth-child(even) { transform: rotate(5deg); }
+.polaroid:nth-child(3n) { transform: rotate(-8deg); }
+.polaroid:nth-child(4n) { transform: rotate(8deg); }
+
+.polaroid:hover {
+  transform: scale(1.1) rotate(0deg);
+}
+
+.polaroid img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.caption {
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+.polaroid::before {
+  content: "";
+  width: 40px;
+  height: 15px;
+  background: rgba(255,255,255,0.6);
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-5deg);
+  border-radius: 3px;
+}

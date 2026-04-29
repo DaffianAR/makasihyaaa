@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Untuk Kamu ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- PAGE 1 -->
+<div id="page1" class="page active">
+  <div class="card">
+    <h1>Hai Kamu 💖</h1>
+    <p>Masukin nama kamu dulu yaa 😳</p>
+    <input type="text" id="nama" placeholder="Nama kamu...">
+    <br>
+    <button onclick="lanjut()">Masuk</button>
+  </div>
+</div>
+
+<!-- PAGE 2 -->
+<div id="page2" class="page">
+  <h2 id="judul"></h2>
+
+  <div class="container">
+    <div class="box" onclick="bukaPage(1)">💌<br>Terimakasih</div>
+    <div class="box" onclick="bukaPage(2)">📸<br>Kenangan</div>
+    <div class="box" onclick="bukaPage(3)">🌙<br>Harapan</div>
+  </div>
+</div>
+
+<!-- TERIMAKASIH -->
+<div id="pageTerima" class="page">
+  <div class="card">
+    <h2>Terimakasih 💕</h2>
+    <p>
+      Terimakasih banyakk ya sell
+       karna udah ada di hidup urng, 
+       mungkin mne udah bosen dengan perkataan urng yg ini
+        tapi urng pengen mne tau bahwa urng beruntung banget bisa bersama 
+        dengan kau sel makasih banyak ya sayanggg
+     💖
+    </p>
+    <button onclick="kembali()">Kembali</button>
+  </div>
+</div>
+
+<!-- FOTO (8 SCRAPBOOK) -->
+<div id="pageFoto" class="page">
+  <h2>Kenangan Kita 📸</h2>
+
+  <div class="gallery">
+
+    <div class="polaroid">
+      <img src="foto/foto1.jpg">
+      <div class="caption">Awal kita ❤️</div>
+    </div>
+
+    <div class="polaroid">
+      <img src="foto/foto2.jpg">
+      <div class="caption">Moment lucu 😆</div>
+    </div>
+
+    <div class="polaroid">
+      <img src="foto/foto3.jpg">
+      <div class="caption">Hari favorit 💕</div>
+    </div>
+
+    <div class="polaroid">
+      <img src="foto/foto4.jpg">
+      <div class="caption">Kita lagi bareng 🫶</div>
+    </div>
+
+    <div class="polaroid">
+      <img src="foto/foto5.jpg">
+      <div class="caption">Gak bakal lupa 🌙</div>
+    </div>
+
+    <div class="polaroid">
+      <img src="foto/foto6.jpg">
+      <div class="caption">Senyum kamu 😳</div>
+    </div>
+
+    <div class="polaroid">
+      <img src="foto/foto7.jpg">
+      <div class="caption">Selalu ada 💖</div>
+    </div>
+
+    <div class="polaroid">
+      <img src="foto/foto8.jpg">
+      <div class="caption">Cerita kita ✨</div>
+    </div>
+
+  </div>
+
+  <button onclick="kembali()">Kembali</button>
+</div>
+
+<!-- HARAPAN -->
+<div id="pageHarapan" class="page">
+  <div class="card">
+    <h2>Harapan Kita 🌙</h2>
+    <p>
+      urng harap kita bisa terus bersama,  
+      lewatin semuanya bareng-bareng,  
+      selalu ngabarin setiap Hari
+      dan komunkasi ketika ada apapun ya kak 💖
+    </p>
+    <button onclick="kembali()">Kembali</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
